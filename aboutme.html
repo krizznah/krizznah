@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - krizznah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Jersey 10', sans-serif;
+            background-color: #000;
+            color: #fff;
+            background-image: url('aboutmebg.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .page-header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 1);
+            background-image: url(aboutmeheader.JPG);
+        }
+        
+        .page-header h1 {
+            font-size: 60px;
+            margin: 0;
+            color: #fff;
+        }
+        
+      .content-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr 350px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-column > :last-child,
+.right-column > :last-child {
+    flex-grow: 1;
+}
+
+.profile-box, .fixations-box, .achievements-box, .info-box, .sidebar-box {
+    background: rgba(36, 20, 69, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ED64F5;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 26px;
+    color: #ED64F5;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.achievements-box .section-title {
+    font-size: 28px;
+}
+
+.sidebar-box .section-title {
+    font-size: 26px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul li:before {
+    content: "🔸 ";
+    margin-right: 8px;
+}
+
+.achievements-box ul li {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.sidebar-box ul li {
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>About Me</h1>
+    </div>
+    
+    <div class="content-wrapper">
+    <!-- Left Column -->
+    <div class="left-column">
+        <!-- Profile Picture Box -->
+        <div class="profile-box">
+            <img src="pfp.jpeg" alt="Profile" class="profile-pic">
+        </div>
+        
+        <!-- Current Fixations Box -->
+        <div class="fixations-box">
+            <h3 class="section-title">Current Fixations:</h3>
+            <ul>
+                <li>Atlanta</li>
+                <li>Burial</li>
+                <li>Making videos</li>
+                <li>Learning html</li>
+                <li>Arkham Knight</li>
+            </ul>
+        </div>
+        
+        <!-- Achievements Box (wider) -->
+        <div class="achievements-box">
+            <h3 class="section-title">ACHIEVEMENTS:</h3>
+            <ul>
+                <li>National Golf Player Circuit (2022)</li>
+                <li>3rd Position, IGU South Zone (2021)</li>
+                <li>3rd Rank Commendation Stream - Army Public School Rathaela (Scored 94.6%)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Info Grid (Name and Bio side by side) -->
+        <div class="info-grid">
+            <div class="info-box">
+                <strong>NAME:</strong> KRISHNA PUNJKARAN<br>
+                <strong>AGE:</strong> 19<br>
+                <strong>EMAIL:</strong> krishnapunjkaran@gmail.com
+            </div>
+            
+            <div class="info-box">
+                <p>Hi. I am Krishna Punjkaran. I reside in Delhi, India. I'm currently in my final year of graduation, which I am pursuing from Delhi College of Arts & Commerce. I am pursuing Bachelor's of Arts in Economics and Human Resource Management.</p>
+            </div>
+        </div>
+        
+        <!-- My Objective Box -->
+        <div class="info-box">
+            <h3 class="section-title">My Objective</h3>
+            <p>My current objective is to enter the film and creative industry through hands-on exposure. Open to learning across departments and contributing creatively to real projects while developing practical industry experience.</p>
+        </div>
+        
+        <!-- All Experience in ONE Box -->
+        <div class="info-box">
+            <h3 class="section-title">EXPERIENCE</h3>
+            
+            <strong>Social Media Head</strong><br>
+            Ehsaas DCAC | College NGO | 2024 - 2025
+            <ul>
+                <li>Created engaging and targeted reels and visual content for social platforms</li>
+                <li>Designed posts that aligned with campaign narratives and resonated with audiences</li>
+                <li>Worked on building a consistent visual language for the organization</li>
+            </ul>
+            
+            <br>
+            
+            <strong>Content Intern</strong><br>
+            @ The Education Tree
+            <ul>
+                <li>Edited youth-focused reels and short-form videos</li>
+                <li>Pitched creative ideas and reference content for better storytelling</li>
+                <li>Assisted in shaping content strategies aimed at younger demographics</li>
+            </ul>
+            
+            <br>
+            
+            <strong>Personal Projects | 2025 - Present</strong>
+            <ul>
+                <li>Creating music videos for artists and music I love</li>
+                <li>Exploring unconventional cuts, pacing, and visual texture</li>
+                <li>Using personal work as a space to experiment and develop a distinct style</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Right Column -->
+    <div class="right-column">
+        <!-- Skills Box -->
+        <div class="sidebar-box">
+            <h3 class="section-title">SKILLS:</h3>
+            <ul>
+                <li>Video & Visuals: DaVinci Resolve, TouchDesigner</li>
+                <li>Design: Photoshop, Figma, Canva</li>
+                <li>Content: Short-form video editing, Reel creation, visual storytelling</li>
+                <li>Creative: Concept ideation, moodboarding, experiment Sections visuals</li>
+            </ul>
+        </div>
+        
+        <!-- Interests Box -->
+        <div class="sidebar-box">
+            <h3 class="section-title">INTERESTS:</h3>
+            <ul>
+                <li>Films and visual storytelling</li>
+                <li>Avid music listener</li>
+                <li>Reading</li>
+                <li>Writing (personal writing and screenplay work)</li>
+                <li>Sports: Football, Golf, Cycling, Running</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

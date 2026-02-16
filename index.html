@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+  
+  <body>
+
+
+    <div id="header" style="height: 170px; margin-bottom: 10px;">
+         <model-viewer src="krizznah.glb"
+    alt="3D Model"
+    camera-controls
+    interaction-prompt="none"
+    camera-orbit="0deg 0deg 2m"
+    min-camera-orbit="auto auto 1.5m"
+    max-camera-orbit="auto auto 5m"
+    scale="4 4 4"
+    environment-image="legacy"
+    exposure="0.4"
+    shadow-intensity="1"
+    style="width: 100%; height: 100%;">
+</model-viewer>
+    </div>
+     <div id="container">
+         <div id="headerArea">
+                
+                
+            </div>
+
+            <div id="flex">
+                <aside id="leftSidebar" style="margin-right: 10px;">
+                     <h2><a href="aboutme.html">About Me</a></h2>
+                    <h3>My Work</h3>
+                    <div class="box">
+                        <ul>
+                           <li>Music Videos</li>
+                           <li>Blog</li>
+                           <li>Photography</li>
+                           <li>Graphic Designs</li>
+                        </ul>
+                    </div>
+                    <h4>My Interests</h4>
+                    <div class="box">
+                      <ul>
+                        <li>Films</li>
+                        <li>Music</li>
+                        <li>Books</li>
+                        <li>Miscellaneous</li>
+                      </ul>
+                    </div>  
+                </aside>
+                <main>
+                    <h1>Welcome to my website! I'm krizznah and I want to curb my cellphone addiction which is why im creating this website. </h1>
+                    <p>Here, I'll mostly talk about my interests in art, films and music and other miscallaneous stuff. I'm a firm believer in the fact that through effort, positive change can be brought in. I also want to try my best and bring some kind of a change to the society that surrounds me.</p>
+                    <p>This will also double as my CV so if you're a potential employer, feel free to explore :) 
+                    <p>I'm an aspiring video maker and I want to be a prolific filmmaker who brings about change in the minds of the people and alleviates them from their pre existing bigoted belief system.</p>
+
+                    
+
+
+                </main>
+                <aside id="rightSidebar" style="margin-left: 10px;">
+                    <div id="discord-widget">
+    <h3>What I'm Up To</h3>
+  <div id="discord-status">🟡 Idle</div>
+<script>
+setInterval(() => {
+    const statuses = [
+        "🟡 Idle", 
+        "🟢 Online 🎮 Playing Arkham Knight", 
+        "🟣 DND 🎵 Spotify: Chill Vibes",
+        "🟡 Idle 💤 Away"
+    ];
+    document.getElementById("discord-status").innerHTML = 
+        statuses[Math.floor(Math.random() * statuses.length)];
+}, 8000);
+</script>
+
+
+</script>
+                    <h3>My Work</h3>
+                    <div class="box">
+                        <ul>
+                           <li>Music Videos</li>
+                           <li>Blog</li>
+                           <li>Photography</li>
+                           <li>Graphic Designs</li>
+                        </ul>
+                    </div>
+                    <h4>My Interests</h4>
+                    <div class="box">
+                      <ul>
+                        <li>Films</li>
+                        <li>Music</li>
+                        <li>Books</li>
+                        <li>Miscellaneous</li>
+                      </ul>
+                    </div>  
+                        
+                    
+                    
+                </aside>
+            </div>
+            
+        </div>
+
+<script>
+  const modelViewer = document.querySelector('model-viewer');
+  
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth) - 0.5;
+    const y = (e.clientY / window.innerHeight) - 0.5;
+    
+    const rotateX = y * 10;
+    const rotateY = x * 15;
+    
+    modelViewer.cameraOrbit = `${rotateY}deg ${15 + rotateX}deg 1m`;
+  });
+</script>
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://melonking.net/scripts/flood.js"></script>
+
+<!-- THIS IS THE CSS !-->
+        <!-- THIS IS THE CSS !-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+            
+            html, body {
+                margin: 0;
+                padding:0;
+            }
+            
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --header-image: url('parking2.JPG');
+                --body-bg-image: url('transcendence.jpg');
+
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            
+
+            body {
+  font-family: 'Jersey 10', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+    background-color: #08031A;
+    background-image: var(--body-bg-image);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 80%;
+    color: #fceaff;
+    min-height: 100vh
+}
+
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 100%;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                margin-top: 180px;
+                padding: 0 20px;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #ED64F5;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                height: 150px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: cover;
+                background-position: center bottom;
+                margin: 0:
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: #13092D;
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #ED64F5;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+                align-items: stretch;
+                min-height: calc(100vh - 180px);
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: rgba(36, 20, 69, 0.7);
+                width: 300px;
+                padding: 20px;
+                font-size: 16px;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: rgba(67, 37, 110, 0.7);
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                font-size: 25px;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: rgba(36, 20, 69, 0.7);
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2 a {
+    color: #ED64F5;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+            h3 {
+                color: #ED64F5;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #ED64F5;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #13092D;
+                border: 1px solid #ED64F5;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+</html>
