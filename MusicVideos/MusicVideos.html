@@ -1,11 +1,324 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-  </body>
+<head>
+    <title>Music Videos - krizznah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Jersey 10', sans-serif;
+            background-color: #08031A;
+            color: #fceaff;
+            background-image: url('MusicVideosBG.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        /* Header */
+        .page-header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('MusicVideosHeader.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: 100%;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 60px;
+            margin: 0;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Navigation back to home */
+        .nav-bar {
+            background-color: rgba(19, 9, 45, 0.9);
+            padding: 10px 20px;
+            text-align: left;
+        }
+        
+        .nav-bar a {
+            color: #ED64F5;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Main content wrapper */
+        .content-wrapper {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Each video row */
+        .video-row {
+            display: grid;
+            grid-template-columns: 600px 1fr;
+            gap: 20px;
+            background: rgba(36, 20, 69, 0.8);
+            border: 2px solid #ED64F5;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        /* Video embed */
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: none;
+        }
+        
+        /* Video info */
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+        
+        .video-title {
+            font-size: 28px;
+            color: #ED64F5;
+            margin: 0;
+        }
+        
+        .video-artist {
+            font-size: 20px;
+            color: #fceaff;
+            margin: 0;
+        }
+        
+        .video-description {
+            font-size: 16px;
+            color: #c9a8d4;
+            line-height: 1.6;
+        }
+        
+        .video-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: rgba(19, 9, 45, 0.9);
+            border: 1px solid #ED64F5;
+            color: #ED64F5;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="page-header">
+        <h1>Music Videos</h1>
+    </div>
+    
+    <!-- Nav -->
+    <div class="nav-bar">
+        <a href="index.html">← Back to Home</a>
+    </div>
+    
+    <!-- Content -->
+    <div class="content-wrapper">
+    
+        <!-- Video 1 -->
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/pFhu0Qc05Q0?si=duQ_wrswBEgeuCD7" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Sn4p 0ut oF 1T</h2>
+                <p class="video-artist">'Aubergine' by Armand Hammer</p>
+                <p class="video-description">
+                   I was inspired by Kiyoshi Kurosawa's 'Cure' which led to me making this video. The concept of the video revolves around hypnosis, as can be seen in the film. It's also riddled with clues as to what had been on my mind while I was making this video. 
+                   
+                   Armand HAmmer are a Hip-Hop duo who also serve as a huge inspiration to the way I think and create, and therefore, Aubergine off of their 2021 record, 'Haram' seemed like the best way to go.
+                   
+                </p>
+                
+            </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/BugwiEPUZuU?si=IkuR4hmMzbP2Obya" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">La Noche</h2>
+                <p class="video-artist">'La Noche' by Navy Blue</p>
+                <p class="video-description">
+                    This is a video that is very personal to me. The song in the video is very close to my heart and has helped me through some tough times.
+                    
+                    The video draws inspiration from the early 2000s, leaning into themes of nostalgia, perseverance and existentialism.
+                </p>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/cGYhASpVGQs?si=s17U0JX3j-HTA-er" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">CULT STATUS</h2>
+                <p class="video-artist">'CULT STATUS' by JPEGMAFIA</p>
+                <p class="video-description">
+                    This video was a result of me experimenting with TouchDesigner for the first time. Leans into glitch-art, i.e. creating art using visual distortion and corruption of video files.
+                </p>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/LH9-dp8IiRA?si=Z8QwCBF0awSCzn5P" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">The Mocking Stars</h2>
+                <p class="video-artist">'The Mocking Stars' by LAUSSE THE CAT</p>
+                <p class="video-description">
+                    I made this video out of love for LAUSSE THE CAT's 2025 album called "The Mocking Stars".
+                    
+                    The intention was to make something cozy and celebratory.
+                </p>
+                
+            </div>
+        </div>
+        
+        
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-Lq4x1N1m4U?si=SL1HCDH0pASvY5gd" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">solace//</h2>
+                <p class="video-artist">'solace' by Earl Sweatshirt</p>
+                <p class="video-description">
+                    I made this video during a time where I felt down and was trying to cope through some bad habits.
+                    
+                    So instead of doing that I tried to reach catharsis by listening to Solace by Earl Sweatshirt(Another artist very close to my heart).
+                </p>
+                
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-wgo3blU-VQ?si=NzTNo1u7lXiM6Pra" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">regret//</h2>
+                <p class="video-artist">'Phantom Regret by Jim' by The Weeknd</p>
+                <p class="video-description">
+                    I made this video as a tribute to my late grandfather, who I still miss very dearly. 
+                </p>
+                
+            </div>
+        </div>
+        
+        
+        <div class="video-row">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Qm2y0AozE9Q?si=YE0e79SKb2d8Epno" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">memorabilia of blessed ignorance</h2>
+                <p class="video-artist">'Falling Out The Sky' by Armand Hammer</p>
+                <p class="video-description">
+                   This was the very first video I made with an artistic intention in mind. It was also the result of my first foray into DaVinci Resolve and video editing in general.
+                </p>
+                
+            </div>
+        </div>
+        
+        </div> <!-- end of content-wrapper -->
+
+    <footer style="
+        text-align: center;
+        padding: 30px;
+        margin-top: 20px;
+        background: rgba(19, 9, 45, 0.9);
+        border-top: 2px solid #ED64F5;
+        font-size: 18px;
+    ">
+        Want to see more? Check out other reels and videos I've worked on for other people/organizations
+        <a href="https://drive.google.com/drive/folders/1XAmZ-dVtTiu_gsFDVk_LF2uesoKkhnGO?usp=sharing" 
+           target="_blank" 
+           style="color: #ED64F5; font-weight: bold; text-decoration: none;">
+            here
+        </a>
+    </footer>
+
+</body>
+</html>
+        
+        <!-- Add more video rows as needed by copying the block above -->
+        
+  
+
+</body>
 </html>
